@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.4.1.slim.min.js"></script>
+    <link href="summernote-lite.min.css"
+          rel="stylesheet">
+    <script src="summernote-lite.min.js"></script>
+</head>
+<body>
+<div id="summernote" style="height:100%"></div>
+<script>
+      $('#summernote').summernote({
+        placeholder: 'Write here',
+        tabsize: 2,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']]
+        ]
+      });
+      $('#summernote').summernote('fullscreen.toggle');
+
+
+
+
+
+</script>
+</body>
+</html>
